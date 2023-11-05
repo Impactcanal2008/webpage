@@ -1,20 +1,69 @@
 body{
     font-family: Arial,  sans-serif; /* Familia de fuentes */
-    font-size: 15px; /* El tamaño de la fuente principal en el tag <p></p> */
-    background-color: #79ff8f; /* El color del fondo de la página web */
+    font-size: 18px; /* El tamaño de la fuente principal en el tag <p></p> */
+    background-color: #ddc67b; /* El color del fondo de la página web */
     color: #1f1f1f; /* El color del texto*/ 
     font-weight: 500;
 }
+
 h1 {
-    color: hsl(236, 100%, 33%); /* El color de la cabecera */
-    font-size: 24px; /* El tamaño de la fuente de la cabecera */
+    font-size: 30px; /* El tamaño de la fuente de la cabecera */
     font-family: Georgia, serif; /* La familia tipográfica utilizada en la cabecera */
+    text-align: center;
 }
+
 h2 {
     color: #a80000; /* El color de la cabecera */
-    font-size: 20px; /* El tamaño de la fuente de la cabecera */
-    font-family: Georgia, serif; /* La familia tipográfica utilizada en la cabecera */
+    font-size: 24px; /* El tamaño de la fuente de la cabecera */
+    font-family: Georgia, serif; 
 }
 img{
     border-radius: 20%;
+}
+button{
+    height: 100px;
+    width: 300px;
+    background-color: #ff8c8c;
+    font-weight: 1000;
+    font-size: large;
+}
+
+@keyframes color-change {
+    0% {
+      color: blue;
+    }
+  
+    50% {
+      color: rgb(2, 104, 32);
+    }
+  
+    100% {
+      color: blue;
+    }
+}
+
+@keyframes color-change2 {
+    0% {
+      color: blue;
+    }
+  
+    50% {
+      color: blueviolet;
+    }
+  
+    100% {
+      color: blue;
+    }
+}
+
+button:hover{
+    animation: color-change 3s infinite;
+}
+
+h1 {
+    animation: color-change 3s infinite;
+}
+
+h2 {
+    animation: color-change2 3s infinite;
 }
